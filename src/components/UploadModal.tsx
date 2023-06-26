@@ -125,7 +125,7 @@ function UploadModal() {
           <Input
             id="song"
             type="file"
-            accept=".mp3"
+            accept=".mp3,.flac,.ogg"
             disabled={isLoading}
             {...register('song', { required: true })}
           />
