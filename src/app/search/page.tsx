@@ -9,6 +9,8 @@ interface PageProps {
   }
 }
 
+export const revalidate = 0
+
 async function Page({ searchParams }: PageProps) {
   const songs = await getSongsByTitle(searchParams.title)
 
